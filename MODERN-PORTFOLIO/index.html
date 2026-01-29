@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deva Anand Prabhu | Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0ea5e9',
+            secondary: '#7e22ce',
+            dark: '#0f172a',
+            darker: '#020617',
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { background:#0f172a; color:#e2e8f0; }
+    .gradient-text {
+      background: linear-gradient(90deg,#0ea5e9,#7e22ce);
+      -webkit-background-clip:text;
+      color:transparent;
+    }
+    .btn-primary {
+      background: linear-gradient(90deg,#0ea5e9,#7e22ce);
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="fixed w-full bg-darker/80 backdrop-blur z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between">
+    <span class="text-2xl font-bold gradient-text">Portfolio</span>
+    <div class="space-x-6 hidden md:block">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="min-h-screen flex items-center bg-gradient-to-br from-[#020617] to-[#0f172a]">
+  <div class="container mx-auto px-6">
+
+    <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+
+      <!-- LEFT CONTENT -->
+      <div class="md:w-1/2">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
+          Hi, I'm
+          <span class="bg-gradient-to-r from-sky-400 to-violet-500 bg-clip-text text-transparent">
+            Deva Anand <br> Prabhu
+          </span>
+        </h1>
+
+        <h2 class="text-2xl md:text-3xl text-slate-300 mb-4">
+          Software Developer
+        </h2>
+
+        <p class="text-slate-400 max-w-xl mb-6">
+          “Turning ideas into clean, functional, and responsive web experiences.”
+        </p>
+
+        <!-- BUTTONS -->
+        <div class="flex gap-4 mb-6">
+          <a href="#contact"
+             class="px-6 py-3 rounded-full bg-gradient-to-r from-sky-500 to-violet-600 text-white font-medium">
+            Hire Me
+          </a>
+
+          <a href="#projects"
+             class="px-6 py-3 rounded-full border border-sky-500 text-sky-400 hover:bg-sky-500/10">
+            Projects
+          </a>
+        </div>
+
+        <!-- SOCIAL ICONS -->
+        <div class="flex gap-4">
+          <a href="https://github.com/DevaAnandPrabhu" target="_blank"
+             class="w-11 h-11 flex items-center justify-center rounded-full bg-slate-800 hover:bg-sky-500">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/your-linkedin-id" target="_blank"
+             class="w-11 h-11 flex items-center justify-center rounded-full bg-slate-800 hover:bg-blue-600">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+          <a href="#contact"
+             class="w-11 h-11 flex items-center justify-center rounded-full bg-slate-800 hover:bg-violet-600">
+            <i class="fas fa-globe"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="md:w-1/2 flex justify-center items-center">
+        <img src="Images/profile.jpg"
+             alt="Profile"
+             class="w-72 h-72 md:w-80 md:h-80 rounded-full object-cover border-4 border-slate-700 shadow-xl">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-24 bg-gradient-to-br from-[#020617] to-[#0f172a]">
+  <div class="container mx-auto px-6">
+
+    <!-- Title -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-white">
+        About <span class="text-sky-400">Me</span>
+      </h2>
+      <div class="w-16 h-1 bg-gradient-to-r from-sky-400 to-violet-500 mx-auto mt-4"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="flex flex-col md:flex-row items-center gap-14">
+
+      <!-- LEFT IMAGE -->
+      <div class="md:w-1/3 flex justify-center">
+        <img src="Images/profile.jpg"
+             alt="Profile"
+             class="w-72 h-72 rounded-2xl object-cover border-4 border-slate-700 shadow-xl">
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div class="md:w-2/3 text-slate-300">
+
+        <h3 class="text-2xl font-semibold text-white mb-4">
+          Who am I?
+        </h3>
+
+        <p class="mb-6 leading-relaxed">
+          I am a BCA graduate and aspiring Software Developer with a strong
+          foundation in front-end technologies like HTML, CSS, JavaScript,
+          React JS, and Bootstrap, along with back-end development using
+          Python, Node JS, Flask, and REST APIs.
+        </p>
+
+        <p class="mb-8 leading-relaxed">
+          I am comfortable working with databases such as SQL, SQLite,
+          SQLAlchemy, and MySQL, and I regularly use tools like Git, GitHub,
+          VS Code, and Docker. I enjoy building scalable applications and
+          continuously improving my skills through hands-on projects.
+        </p>
+
+        <!-- DETAILS -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+          <p><b>Name:</b> Deva Anand Prabhu</p>
+          <p><b>Location:</b> Tamil Nadu, India</p>
+          <p><b>Email:</b> devaanandprabhu@gmail.com</p>
+          <p><b>Degree:</b> BCA (7.54 CGPA)</p>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="flex gap-4">
+          <a href="resume.pdf"
+             class="px-6 py-3 rounded-full bg-gradient-to-r from-sky-500 to-violet-600 text-white font-medium">
+            Download CV
+          </a>
+
+          <a href="#contact"
+             class="px-6 py-3 rounded-full border border-sky-500 text-sky-400 hover:bg-sky-500/10">
+            Contact Me
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills" class="py-24 bg-gradient-to-br from-[#020617] to-[#0f172a]">
+  <div class="container mx-auto px-6">
+
+    <!-- Title -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-white">
+        My <span class="text-sky-400">Skills</span>
+      </h2>
+      <div class="w-16 h-1 bg-gradient-to-r from-sky-400 to-violet-500 mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+
+      <!-- TECHNICAL SKILLS -->
+      <div>
+        <h3 class="text-2xl font-semibold text-white mb-8">Technical Skills</h3>
+
+        <!-- Skill -->
+        <div class="mb-6">
+          <div class="flex justify-between mb-2">
+            <span>HTML / CSS  /  Boostrap</span>
+            <span>95%</span>
+          </div>
+          <div class="w-full h-3 bg-slate-800 rounded-full">
+            <div class="h-3 rounded-full bg-gradient-to-r from-sky-400 to-violet-500 w-[95%]"></div>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <div class="flex justify-between mb-2">
+            <span>JavaScript</span>
+            <span>90%</span>
+          </div>
+          <div class="w-full h-3 bg-slate-800 rounded-full">
+            <div class="h-3 rounded-full bg-gradient-to-r from-sky-400 to-violet-500 w-[90%]"></div>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <div class="flex justify-between mb-2">
+            <span>React JS</span>
+            <span>85%</span>
+          </div>
+          <div class="w-full h-3 bg-slate-800 rounded-full">
+            <div class="h-3 rounded-full bg-gradient-to-r from-sky-400 to-violet-500 w-[85%]"></div>
+          </div>
+        </div>
+
+        <div class="mb-6">
+        <div>
+          <div class="flex justify-between mb-2">
+            <span>Node JS</span>
+            <span>86%</span>
+          </div>
+          <div class="w-full h-3 bg-slate-800 rounded-full">
+            <div class="h-3 rounded-full bg-gradient-to-r from-sky-400 to-violet-500 w-[80%]"></div>
+          </div>
+        </div>
+       </div>
+
+       <div class="mb-6">
+        <div>
+          <div class="flex justify-between mb-2">
+            <span>Python</span>
+            <span>90%</span>
+          </div>
+          <div class="w-full h-3 bg-slate-800 rounded-full">
+             <div class="h-3 rounded-full bg-gradient-to-r from-sky-400 to-violet-500 w-[90%]"></div>
+          </div>
+        </div>
+        </div>
+
+        <div class="mb-6">
+        <div>
+          <div class="flex justify-between mb-2">
+            <span>Java</span>
+            <span>79%</span>
+          </div>
+          <div class="w-full h-3 bg-slate-800 rounded-full">
+            <div class="h-3 rounded-full bg-gradient-to-r from-sky-400 to-violet-500 w-[80%]"></div>
+          </div>
+        </div>
+        </div>
+
+         <div>
+          <div class="flex justify-between mb-2">
+            <span>Sql</span>
+            <span>87%</span>
+          </div>
+          <div class="w-full h-3 bg-slate-800 rounded-full">
+            <div class="h-3 rounded-full bg-gradient-to-r from-sky-400 to-violet-500 w-[80%]"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROFESSIONAL SKILLS -->
+      <div>
+        <h3 class="text-2xl font-semibold text-white mb-8">Professional Skills</h3>
+
+        <div class="mb-6">
+          <div class="flex justify-between mb-2">
+            <span>Communication</span>
+            <span>90%</span>
+          </div>
+          <div class="w-full h-3 bg-slate-800 rounded-full">
+            <div class="h-3 rounded-full bg-gradient-to-r from-sky-400 to-violet-500 w-[90%]"></div>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <div class="flex justify-between mb-2">
+            <span>Teamwork</span>
+            <span>85%</span>
+          </div>
+          <div class="w-full h-3 bg-slate-800 rounded-full">
+            <div class="h-3 rounded-full bg-gradient-to-r from-sky-400 to-violet-500 w-[85%]"></div>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <div class="flex justify-between mb-2">
+            <span>Problem Solving</span>
+            <span>95%</span>
+          </div>
+          <div class="w-full h-3 bg-slate-800 rounded-full">
+            <div class="h-3 rounded-full bg-gradient-to-r from-sky-400 to-violet-500 w-[95%]"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between mb-2">
+            <span>Creativity</span>
+            <span>75%</span>
+          </div>
+          <div class="w-full h-3 bg-slate-800 rounded-full">
+            <div class="h-3 rounded-full bg-gradient-to-r from-sky-400 to-violet-500 w-[75%]"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="tools" class="py-24 bg-gradient-to-br from-[#020617] to-[#0f172a]">
+  <div class="container mx-auto px-6">
+
+    <!-- Title -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-white">
+        Tools & <span class="text-sky-400">Technologies</span>
+      </h2>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+
+      <!-- HTML -->
+      <div class="bg-slate-800 rounded-xl p-6 flex flex-col items-center hover:-translate-y-2 transition">
+        <i class="fab fa-html5 text-5xl text-orange-500 mb-4"></i>
+        <span>HTML5</span>
+      </div>
+
+      <!-- CSS -->
+      <div class="bg-slate-800 rounded-xl p-6 flex flex-col items-center hover:-translate-y-2 transition">
+        <i class="fab fa-css3-alt text-5xl text-blue-500 mb-4"></i>
+        <span>CSS3</span>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="bg-slate-800 rounded-xl p-6 flex flex-col items-center hover:-translate-y-2 transition">
+        <i class="fab fa-js text-5xl text-yellow-400 mb-4"></i>
+        <span>JavaScript</span>
+      </div>
+
+      <!-- React -->
+      <div class="bg-slate-800 rounded-xl p-6 flex flex-col items-center hover:-translate-y-2 transition">
+        <i class="fab fa-react text-5xl text-sky-400 mb-4"></i>
+        <span>React</span>
+      </div>
+
+      <!-- Node -->
+      <div class="bg-slate-800 rounded-xl p-6 flex flex-col items-center hover:-translate-y-2 transition">
+        <i class="fab fa-node-js text-5xl text-green-500 mb-4"></i>
+        <span>Node.js</span>
+      </div>
+
+      <!-- Database -->
+      <div class="bg-slate-800 rounded-xl p-6 flex flex-col items-center hover:-translate-y-2 transition">
+        <i class="fas fa-database text-5xl text-blue-300 mb-4"></i>
+        <span>Mongo Db</span>
+      </div>
+
+      <!-- Git -->
+      <div class="bg-slate-800 rounded-xl p-6 flex flex-col items-center hover:-translate-y-2 transition">
+        <i class="fab fa-git-alt text-5xl text-orange-600 mb-4"></i>
+        <span>Git</span>
+      </div>
+
+      <!-- npm -->
+      <div class="bg-slate-800 rounded-xl p-6 flex flex-col items-center hover:-translate-y-2 transition">
+        <i class="fab fa-npm text-5xl text-red-500 mb-4"></i>
+        <span>npm</span>
+      </div>
+
+      <!-- Python -->
+<div class="bg-slate-800 rounded-xl p-6 flex flex-col items-center hover:-translate-y-2 transition">
+  <i class="fab fa-python text-5xl text-yellow-400 mb-4"></i>
+  <span>Python</span>
+</div>
+
+<!-- Java -->
+<div class="bg-slate-800 rounded-xl p-6 flex flex-col items-center hover:-translate-y-2 transition">
+  <i class="fab fa-java text-5xl text-red-500 mb-4"></i>
+  <span>Java</span>
+</div>
+
+      <!-- Figma -->
+      <div class="bg-slate-800 rounded-xl p-6 flex flex-col items-center hover:-translate-y-2 transition">
+        <i class="fab fa-figma text-5xl text-purple-500 mb-4"></i>
+        <span>Figma</span>
+      </div>
+
+      <!-- VS Code -->
+      <div class="bg-slate-800 rounded-xl p-6 flex flex-col items-center hover:-translate-y-2 transition">
+        <i class="fas fa-code text-5xl text-gray-300 mb-4"></i>
+        <span>VS Code</span>
+      </div>
+
+      <!-- Linux -->
+      <div class="bg-slate-800 rounded-xl p-6 flex flex-col items-center hover:-translate-y-2 transition">
+        <i class="fab fa-linux text-5xl text-white mb-4"></i>
+        <span>Linux</span>
+      </div>
+
+      <!-- Docker -->
+      <div class="bg-slate-800 rounded-xl p-6 flex flex-col items-center hover:-translate-y-2 transition">
+        <i class="fab fa-docker text-5xl text-sky-400 mb-4"></i>
+        <span>Docker</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects" class="py-24 bg-gradient-to-br from-[#020617] to-[#0f172a]">
+  <div class="container mx-auto px-6">
+
+    <!-- Title -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-white">
+        My <span class="text-sky-400">Projects</span>
+      </h2>
+      <div class="w-16 h-1 bg-gradient-to-r from-sky-400 to-violet-500 mx-auto mt-4"></div>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- PROJECT 1 -->
+      <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition">
+        <img src="Images/project1.jpg" alt="Project 1" class="w-full h-48 object-cover">
+
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-white mb-2">
+            Student Result Management System
+          </h3>
+
+          <p class="text-slate-400 text-sm mb-4">
+            Flask-based system for managing student records, results,
+            admin & student login with CRUD operations.
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 text-xs bg-slate-700 rounded-full">Python</span>
+            <span class="px-3 py-1 text-xs bg-slate-700 rounded-full">Flask</span>
+            <span class="px-3 py-1 text-xs bg-slate-700 rounded-full">SQL</span>
+          </div>
+
+          <div class="flex gap-4 text-sky-400">
+            <a href="#" class="hover:underline flex items-center gap-1">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="https://github.com/DevaAnandPrabhu" target="_blank"
+               class="hover:underline flex items-center gap-1">
+              <i class="fab fa-github"></i> Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition">
+        <img src="Images/project2.jpg" alt="Project 2" class="w-full h-48 object-cover">
+
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-white mb-2">
+            Sign Language Recognition App
+          </h3>
+
+          <p class="text-slate-400 text-sm mb-4">
+            Real-time sign language recognition using deep learning
+            and computer vision with Flask web interface.
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 text-xs bg-slate-700 rounded-full">Python</span>
+            <span class="px-3 py-1 text-xs bg-slate-700 rounded-full">OpenCV</span>
+            <span class="px-3 py-1 text-xs bg-slate-700 rounded-full">Deep Learning</span>
+          </div>
+
+          <div class="flex gap-4 text-sky-400">
+            <a href="#" class="hover:underline flex items-center gap-1">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="#" class="hover:underline flex items-center gap-1">
+              <i class="fab fa-github"></i> Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition">
+        <img src="Images/project3.png" alt="Project 3" class="w-full h-48 object-cover">
+
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-white mb-2">
+            Data Leakage Detection
+          </h3>
+
+          <p class="text-slate-400 text-sm mb-4">
+            System to detect unauthorized data leakage using guilt modeling,
+            built with JSP, Servlets, and MySQL.
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 text-xs bg-slate-700 rounded-full">Java</span>
+            <span class="px-3 py-1 text-xs bg-slate-700 rounded-full">JSP</span>
+            <span class="px-3 py-1 text-xs bg-slate-700 rounded-full">MySQL</span>
+          </div>
+
+          <div class="flex gap-4 text-sky-400">
+            <a href="#" class="hover:underline flex items-center gap-1">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="#" class="hover:underline flex items-center gap-1">
+              <i class="fab fa-github"></i> Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 bg-gradient-to-br from-[#020617] to-[#0f172a]">
+  <div class="container mx-auto px-6">
+
+    <!-- Title -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-white">
+        Get In <span class="text-sky-400">Touch</span>
+      </h2>
+      <div class="w-16 h-1 bg-gradient-to-r from-sky-400 to-violet-500 mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+
+      <!-- LEFT: CONTACT INFO -->
+      <div class="text-slate-300">
+        <h3 class="text-2xl font-semibold text-white mb-4">
+          Contact Information
+        </h3>
+
+        <p class="mb-8 text-slate-400">
+          Feel free to reach out to me for any questions or opportunities.
+          I'm always open to discussing new projects, creative ideas, or
+          opportunities to be part of your vision.
+        </p>
+
+        <div class="space-y-6">
+
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 flex items-center justify-center rounded-full bg-slate-800">
+              <i class="fas fa-map-marker-alt text-sky-400"></i>
+            </div>
+            <div>
+              <p class="font-semibold">Location</p>
+              <p class="text-slate-400">Rajapalayam,Tamil Nadu, India</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 flex items-center justify-center rounded-full bg-slate-800">
+              <i class="fas fa-envelope text-sky-400"></i>
+            </div>
+            <div>
+              <p class="font-semibold">Email</p>
+              <p class="text-slate-400">devaanandprabhu@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 flex items-center justify-center rounded-full bg-slate-800">
+              <i class="fas fa-phone-alt text-sky-400"></i>
+            </div>
+            <div>
+              <p class="font-semibold">Phone</p>
+              <p class="text-slate-400">+91 73395 21741</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="mt-10">
+          <p class="font-semibold mb-4">Follow Me</p>
+          <div class="flex gap-4">
+            <a href="https://github.com/DevaAnandPrabhu" target="_blank"
+               class="w-11 h-11 flex items-center justify-center rounded-full bg-slate-800 hover:bg-sky-500">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank"
+               class="w-11 h-11 flex items-center justify-center rounded-full bg-slate-800 hover:bg-blue-600">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="w-11 h-11 flex items-center justify-center rounded-full bg-slate-800 hover:bg-sky-400">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: CONTACT FORM -->
+      <form class="space-y-6">
+        <h3 class="text-2xl font-semibold text-white mb-4">
+          Send Me a Message
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <input type="text" placeholder="Your Name"
+                 class="bg-slate-800 text-white p-4 rounded-lg outline-none focus:ring-2 focus:ring-sky-500">
+
+          <input type="email" placeholder="Your Email"
+                 class="bg-slate-800 text-white p-4 rounded-lg outline-none focus:ring-2 focus:ring-sky-500">
+        </div>
+
+        <input type="text" placeholder="Subject"
+               class="w-full bg-slate-800 text-white p-4 rounded-lg outline-none focus:ring-2 focus:ring-sky-500">
+
+        <textarea rows="5" placeholder="Message"
+                  class="w-full bg-slate-800 text-white p-4 rounded-lg outline-none focus:ring-2 focus:ring-sky-500"></textarea>
+
+        <button type="submit"
+                class="w-full py-4 rounded-full bg-gradient-to-r from-sky-500 to-violet-600 text-white font-semibold flex items-center justify-center gap-2">
+          Send Message <i class="fas fa-paper-plane"></i>
+        </button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="bg-[#020617] text-slate-400 pt-12 pb-6">
+  <div class="container mx-auto px-6">
+
+    <!-- TOP FOOTER -->
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+
+      <!-- LEFT -->
+      <div>
+        <h3 class="text-xl font-bold text-sky-400">Portfolio</h3>
+        <p class="mt-2 text-sm">
+          © 2026 Deva Anand Prabhu. All rights reserved.
+        </p>
+      </div>
+
+      <!-- RIGHT SOCIAL ICONS -->
+      <div class="flex gap-4">
+        <a href="https://github.com/DevaAnandPrabhu" target="_blank"
+           class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-800 hover:bg-sky-500">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com" target="_blank"
+           class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-800 hover:bg-blue-600">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        
+
+        <a href="#home"
+           class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-800 hover:bg-violet-600">
+          <i class="fas fa-globe"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- DIVIDER -->
+    <div class="border-t border-slate-800 my-8"></div>
+
+    <!-- BOTTOM -->
+    <div class="text-center text-sm">
+      Made with <span class="text-red-500">❤</span> and lots of <span class="text-yellow-400">☕</span>
+    </div>
+
+  </div>
+</footer>
+
+
+</body>
+</html>
