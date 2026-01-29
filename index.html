@@ -23,6 +23,36 @@
       }
     }
   </script>
+  <!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  (function () {
+    emailjs.init("s7o9XAV7PAiiyqhMg");
+  })();
+</script>
+
+
+<script>
+function sendEmail(e) {
+  e.preventDefault();
+
+  emailjs.send("service_gmail", "template_j1y6ryf", {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    title: document.getElementById("subject").value,
+    message: document.getElementById("message").value,
+  })
+  .then(() => {
+    alert("Message sent successfully!");
+    document.getElementById("contact-form").reset();
+  })
+  .catch((error) => {
+    alert("Message send fail 😢");
+    console.log(error);
+  });
+}
+</script>
 
   <style>
     body { background:#0f172a; color:#e2e8f0; }
@@ -631,23 +661,28 @@
       </div>
 
       <!-- RIGHT: CONTACT FORM -->
-      <form class="space-y-6">
+      <form id="contact-form" onsubmit="sendEmail(event)" class="space-y-6">
+
         <h3 class="text-2xl font-semibold text-white mb-4">
           Send Me a Message
         </h3>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <input type="text" placeholder="Your Name"
+           id="name"
                  class="bg-slate-800 text-white p-4 rounded-lg outline-none focus:ring-2 focus:ring-sky-500">
 
           <input type="email" placeholder="Your Email"
+           id="email"
                  class="bg-slate-800 text-white p-4 rounded-lg outline-none focus:ring-2 focus:ring-sky-500">
         </div>
 
         <input type="text" placeholder="Subject"
+         id="subject"
                class="w-full bg-slate-800 text-white p-4 rounded-lg outline-none focus:ring-2 focus:ring-sky-500">
 
         <textarea rows="5" placeholder="Message"
+         id="message"
                   class="w-full bg-slate-800 text-white p-4 rounded-lg outline-none focus:ring-2 focus:ring-sky-500"></textarea>
 
         <button type="submit"
